@@ -63,11 +63,45 @@
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
                     <connections>
                         <outlet property="tableView" destination="qSP-mR-xRg" id="8QV-9a-7wF"/>
+                        <segue destination="jqt-KR-kQK" kind="modal" identifier="ToDetailViewController" id="Lif-I0-TNP"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="123.5" y="160.5"/>
+            <point key="canvasLocation" x="29.5" y="138.5"/>
+        </scene>
+        <!--Detail View Controller-->
+        <scene sceneID="4vB-pv-6F3">
+            <objects>
+                <viewController id="jqt-KR-kQK" customClass="DetailViewController" customModule="SegueTableViewDetailPic02" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="52d-p1-MPw"/>
+                        <viewControllerLayoutGuide type="bottom" id="wQO-gp-LWl"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="KNE-SO-tKH">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="rCg-SX-Dd9">
+                                <rect key="frame" x="0.0" y="64" width="375" height="375"/>
+                            </imageView>
+                            <navigationBar contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="VLo-sQ-a9h">
+                                <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                                <items>
+                                    <navigationItem title="Title" id="DIb-Zv-o4q"/>
+                                </items>
+                            </navigationBar>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                    <connections>
+                        <outlet property="imageView" destination="rCg-SX-Dd9" id="gSl-Ee-j3z"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="tO2-pX-0ZW" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="562.5" y="138.5"/>
         </scene>
     </scenes>
 </document>

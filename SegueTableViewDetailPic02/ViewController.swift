@@ -17,6 +17,8 @@ class ViewController: UIViewController , UITableViewDataSource, UITableViewDeleg
     let label2Array: NSArray = ["2013/8/23 16:04","2013/8/23 16:15","2013/8/23 16:47","2013/8/23 17:10",
         "2013/8/23 17:15","2013/8/23 17:21","2013/8/23 17:33","2013/8/23 17:41"]
     
+    var selectedImage: UIImage?
+    
     override func viewDidLoad() {
         super.viewDidLoad()
     }
@@ -46,6 +48,23 @@ class ViewController: UIViewController , UITableViewDataSource, UITableViewDeleg
         label2?.text = "\(label2Array[indexPath.row])"
         
         return cell
+    }
+    // Cell が選択された場合
+    func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath:NSIndexPath!) {
+        // [indexPath.row] から画像名を探し、UImage を設定
+        selectedImage = UIImage(named:"\(imgArray[indexPath.row])")
+        
+        // DetailViewController へ遷移するために Segue を呼び出す
+        performSegueWithIdentifier("ToDetailViewController",sender: nil)
+    }
+    
+    // Segue 準備
+    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject!) {
+        if (segue.identifier == "ToDetailViewController") {
+            let DetailVC: DetailViewController = segue.destinationViewController as DetailViewController
+            // DetailViewController のselectedImgに選択された画像を設定する
+            DetailVC.selectedImg = selectedImage
+        }
     }
     
     override func didReceiveMemoryWarning() {

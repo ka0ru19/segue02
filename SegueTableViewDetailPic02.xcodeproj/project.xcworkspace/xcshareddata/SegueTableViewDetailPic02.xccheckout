@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>AE22FDE0-2764-44F1-8109-FA1E09F74BBA</string>
+	<key>IDESourceControlProjectName</key>
+	<string>SegueTableViewDetailPic02</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>2F5E0F48168DC8A9B9D3F3582049FA34C755EDC9</key>
+		<string>https://github.com/ka0ru19/segue02.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>SegueTableViewDetailPic02.xcodeproj</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>2F5E0F48168DC8A9B9D3F3582049FA34C755EDC9</key>
+		<string>../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/ka0ru19/segue02.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>111</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>2F5E0F48168DC8A9B9D3F3582049FA34C755EDC9</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>2F5E0F48168DC8A9B9D3F3582049FA34C755EDC9</string>
+			<key>IDESourceControlWCCName</key>
+			<string>SegueTableViewDetailPic02</string>
+		</dict>
+	</array>
+</dict>
+</plist>
