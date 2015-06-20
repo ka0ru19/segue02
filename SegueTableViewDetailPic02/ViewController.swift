@@ -12,7 +12,7 @@ class ViewController: UIViewController , UITableViewDataSource, UITableViewDeleg
     
     @IBOutlet var tableView : UITableView?
     
-    let imgArray: NSArray = ["0.png","1.png","2.png","3.png","4.png","5.png","6.png","7.png"]
+    let imgArray: NSMutableArray = ["0.png","1.png","2.png","3.png","4.png","5.png","6.png","7.png"]
     
     let label2Array: NSArray = ["2013/8/23 16:04","2013/8/23 16:15","2013/8/23 16:47","2013/8/23 17:10",
         "2013/8/23 17:15","2013/8/23 17:21","2013/8/23 17:33","2013/8/23 17:41"]
@@ -57,6 +57,8 @@ class ViewController: UIViewController , UITableViewDataSource, UITableViewDeleg
         // DetailViewController へ遷移するために Segue を呼び出す
         performSegueWithIdentifier("ToDetailViewController",sender: nil)
     }
+    // Add が選択された場合
+    // DetailViewController に遷移
     
     // Segue 準備
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject!) {
