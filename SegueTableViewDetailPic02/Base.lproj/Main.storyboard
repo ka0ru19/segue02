@@ -138,7 +138,7 @@
                     <navigationItem key="navigationItem" id="AJT-XE-JCH"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
                     <connections>
-                        <outlet property="dateLabel" destination="ig2-gd-fj9" id="kre-df-I42"/>
+                        <outlet property="dataLabel" destination="ig2-gd-fj9" id="Coy-hu-lio"/>
                         <outlet property="imageView" destination="rCg-SX-Dd9" id="gSl-Ee-j3z"/>
                         <outlet property="nameLabel" destination="M57-nE-TsB" id="c82-8E-88P"/>
                     </connections>
